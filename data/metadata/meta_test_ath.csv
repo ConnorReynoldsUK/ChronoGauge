@@ -1,0 +1,74 @@
+Column,Col_name,Sampling time (CT/ZT),Time (24hr modulus),Study Accession,Authors,Photoperiod,Platform
+0,cov_24,24,0,GSE8365,Covington et al,LL,Micorarray ATH1-121501
+1,cov_28,28,4,GSE8365,Covington et al,LL,Micorarray ATH1-121501
+2,cov_32,32,8,GSE8365,Covington et al,LL,Micorarray ATH1-121501
+3,cov_36,36,12,GSE8365,Covington et al,LL,Micorarray ATH1-121501
+4,cov_40,40,16,GSE8365,Covington et al,LL,Micorarray ATH1-121501
+5,cov_44,44,20,GSE8365,Covington et al,LL,Micorarray ATH1-121501
+6,cov_48,48,0,GSE8365,Covington et al,LL,Micorarray ATH1-121501
+7,cov_52,52,4,GSE8365,Covington et al,LL,Micorarray ATH1-121501
+8,cov_56,56,8,GSE8365,Covington et al,LL,Micorarray ATH1-121501
+9,cov_60,60,12,GSE8365,Covington et al,LL,Micorarray ATH1-121501
+10,cov_64,64,16,GSE8365,Covington et al,LL,Micorarray ATH1-121501
+11,cov_68,68,20,GSE8365,Covington et al,LL,Micorarray ATH1-121501
+12,ed_26,26,2,E-GEOD-5612,Edwards et al,LL,Micorarray ATH1-121501
+13,ed_30,30,6,E-GEOD-5612,Edwards et al,LL,Micorarray ATH1-121501
+14,ed_34,34,10,E-GEOD-5612,Edwards et al,LL,Micorarray ATH1-121501
+15,ed_38,38,14,E-GEOD-5612,Edwards et al,LL,Micorarray ATH1-121501
+16,ed_42,42,18,E-GEOD-5612,Edwards et al,LL,Micorarray ATH1-121501
+17,ed_46,46,22,E-GEOD-5612,Edwards et al,LL,Micorarray ATH1-121501
+18,ed_50,50,2,E-GEOD-5612,Edwards et al,LL,Micorarray ATH1-121501
+19,ed_54,54,6,E-GEOD-5612,Edwards et al,LL,Micorarray ATH1-121501
+20,ed_58,58,10,E-GEOD-5612,Edwards et al,LL,Micorarray ATH1-121501
+21,ed_62,62,14,E-GEOD-5612,Edwards et al,LL,Micorarray ATH1-121501
+22,ed_66,66,18,E-GEOD-5612,Edwards et al,LL,Micorarray ATH1-121501
+23,ed_70,70,22,E-GEOD-5612,Edwards et al,LL,Micorarray ATH1-121501
+24,ed_74,74,2,E-GEOD-5612,Edwards et al,LL,Micorarray ATH1-121501
+25,esp_ll_16,16,16,E-MEXP-2526,Espinoza et al,LL,Micorarray ATH1-121501
+26,esp_ll_20,20,20,E-MEXP-2526,Espinoza et al,LL,Micorarray ATH1-121501
+27,esp_ll_24,24,0,E-MEXP-2526,Espinoza et al,LL,Micorarray ATH1-121501
+28,esp_ll_28,28,4,E-MEXP-2526,Espinoza et al,LL,Micorarray ATH1-121501
+29,esp_ll_32,32,8,E-MEXP-2526,Espinoza et al,LL,Micorarray ATH1-121501
+30,esp_ll_36,36,12,E-MEXP-2526,Espinoza et al,LL,Micorarray ATH1-121501
+31,esp_ll_40,40,16,E-MEXP-2526,Espinoza et al,LL,Micorarray ATH1-121501
+32,esp_ll_44,44,20,E-MEXP-2526,Espinoza et al,LL,Micorarray ATH1-121501
+33,esp_ll_48,48,0,E-MEXP-2526,Espinoza et al,LL,Micorarray ATH1-121501
+34,esp_ll_52,52,4,E-MEXP-2526,Espinoza et al,LL,Micorarray ATH1-121501
+35,esp_ll_56,56,8,E-MEXP-2526,Espinoza et al,LL,Micorarray ATH1-121501
+36,esp_ll_60,60,12,E-MEXP-2526,Espinoza et al,LL,Micorarray ATH1-121501
+37,esp_ll_64,64,16,E-MEXP-2526,Espinoza et al,LL,Micorarray ATH1-121501
+38,esp_ll_68,68,20,E-MEXP-2526,Espinoza et al,LL,Micorarray ATH1-121501
+39,esp_ll_72,72,0,E-MEXP-2526,Espinoza et al,LL,Micorarray ATH1-121501
+40,esp_ld_16,16,16,E-MEXP-2526,Espinoza et al,16:8 LD,Micorarray ATH1-121501
+41,esp_ld_20,20,20,E-MEXP-2526,Espinoza et al,16:8 LD,Micorarray ATH1-121501
+42,esp_ld_24,24,0,E-MEXP-2526,Espinoza et al,16:8 LD,Micorarray ATH1-121501
+43,esp_ld_28,28,4,E-MEXP-2526,Espinoza et al,16:8 LD,Micorarray ATH1-121501
+44,esp_ld_32,32,8,E-MEXP-2526,Espinoza et al,16:8 LD,Micorarray ATH1-121501
+45,esp_ld_36,36,12,E-MEXP-2526,Espinoza et al,16:8 LD,Micorarray ATH1-121501
+46,esp_ld_40,40,16,E-MEXP-2526,Espinoza et al,16:8 LD,Micorarray ATH1-121501
+47,esp_ld_44,44,20,E-MEXP-2526,Espinoza et al,16:8 LD,Micorarray ATH1-121501
+48,esp_ld_48,48,0,E-MEXP-2526,Espinoza et al,16:8 LD,Micorarray ATH1-121501
+49,esp_ld_52,52,4,E-MEXP-2526,Espinoza et al,16:8 LD,Micorarray ATH1-121501
+50,esp_ld_56,56,8,E-MEXP-2526,Espinoza et al,16:8 LD,Micorarray ATH1-121501
+51,esp_ld_60,60,12,E-MEXP-2526,Espinoza et al,16:8 LD,Micorarray ATH1-121501
+52,esp_ld_64,64,16,E-MEXP-2526,Espinoza et al,16:8 LD,Micorarray ATH1-121501
+53,esp_ld_68,68,20,E-MEXP-2526,Espinoza et al,16:8 LD,Micorarray ATH1-121501
+54,esp_ld_72,72,0,E-MEXP-2526,Espinoza et al,16:8 LD,Micorarray ATH1-121501
+55,col_ID_00.CEL,0,0,E-MEXP-1299,Michael et al,16:8 LD,Micorarray ATH1-121501
+56,col_ID_04.CEL,4,4,E-MEXP-1299,Michael et al,16:8 LD,Micorarray ATH1-121501
+57,col_ID_08.CEL,8,8,E-MEXP-1299,Michael et al,16:8 LD,Micorarray ATH1-121501
+58,col_ID_12.CEL,12,12,E-MEXP-1299,Michael et al,16:8 LD,Micorarray ATH1-121501
+59,col_ID_16.CEL,16,16,E-MEXP-1299,Michael et al,16:8 LD,Micorarray ATH1-121501
+60,col_ID_20.CEL,20,20,E-MEXP-1299,Michael et al,16:8 LD,Micorarray ATH1-121501
+61,col_SD_00.CEL,0,0,E-MEXP-1299,Michael et al,8:16 LD,Micorarray ATH1-121501
+62,col_SD_04.CEL,4,4,E-MEXP-1299,Michael et al,8:16 LD,Micorarray ATH1-121501
+63,col_SD_08.CEL,8,8,E-MEXP-1299,Michael et al,8:16 LD,Micorarray ATH1-121501
+64,col_SD_12.CEL,12,12,E-MEXP-1299,Michael et al,8:16 LD,Micorarray ATH1-121501
+65,col_SD_16.CEL,16,16,E-MEXP-1299,Michael et al,8:16 LD,Micorarray ATH1-121501
+66,col_SD_20.CEL,20,20,E-MEXP-1299,Michael et al,8:16 LD,Micorarray ATH1-121501
+67,ler_SD_00.CEL,0,0,E-MEXP-1299,Michael et al,8:16 LD,Micorarray ATH1-121501
+68,ler_SD_04.CEL,4,4,E-MEXP-1299,Michael et al,8:16 LD,Micorarray ATH1-121501
+69,ler_SD_08.CEL,8,8,E-MEXP-1299,Michael et al,8:16 LD,Micorarray ATH1-121501
+70,ler_SD_12.CEL,12,12,E-MEXP-1299,Michael et al,8:16 LD,Micorarray ATH1-121501
+71,ler_SD_16.CEL,16,16,E-MEXP-1299,Michael et al,8:16 LD,Micorarray ATH1-121501
+72,ler_SD_20.CEL,20,20,E-MEXP-1299,Michael et al,8:16 LD,Micorarray ATH1-121501

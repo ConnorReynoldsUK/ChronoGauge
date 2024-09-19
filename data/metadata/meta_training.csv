@@ -1,0 +1,57 @@
+Column,Sampling time (CT/ZT),Time (24hr modulus),Study Accession,Authors,Photoperiod
+0,0,0,E-MTAB-7933,Romanowksi et al,LL
+1,4,4,E-MTAB-7933,Romanowksi et al,LL
+2,8,8,E-MTAB-7933,Romanowksi et al,LL
+3,12,12,E-MTAB-7933,Romanowksi et al,LL
+4,16,16,E-MTAB-7933,Romanowksi et al,LL
+5,20,20,E-MTAB-7933,Romanowksi et al,LL
+6,24,0,E-MTAB-7933,Romanowksi et al,LL
+7,28,4,E-MTAB-7933,Romanowksi et al,LL
+8,32,8,E-MTAB-7933,Romanowksi et al,LL
+9,36,12,E-MTAB-7933,Romanowksi et al,LL
+10,40,16,E-MTAB-7933,Romanowksi et al,LL
+11,44,20,E-MTAB-7933,Romanowksi et al,LL
+12,2,2,GSE137732,Yang et al,LL
+13,5,5,GSE137732,Yang et al,LL
+14,8,8,GSE137732,Yang et al,LL
+15,11,11,GSE137732,Yang et al,LL
+16,14,14,GSE137732,Yang et al,LL
+17,17,17,GSE137732,Yang et al,LL
+18,20,20,GSE137732,Yang et al,LL
+19,23,23,GSE137732,Yang et al,LL
+20,26,2,GSE137732,Yang et al,LL
+21,29,5,GSE137732,Yang et al,LL
+22,32,8,GSE137732,Yang et al,LL
+23,35,11,GSE137732,Yang et al,LL
+24,38,14,GSE137732,Yang et al,LL
+25,41,17,GSE137732,Yang et al,LL
+26,44,20,GSE137732,Yang et al,LL
+27,47,23,GSE137732,Yang et al,LL
+28,2,2,GSE137732,Yang et al,16:8 LD
+29,5,5,GSE137732,Yang et al,16:8 LD
+30,8,8,GSE137732,Yang et al,16:8 LD
+31,11,11,GSE137732,Yang et al,16:8 LD
+32,14,14,GSE137732,Yang et al,16:8 LD
+33,17,17,GSE137732,Yang et al,16:8 LD
+34,20,20,GSE137732,Yang et al,16:8 LD
+35,23,23,GSE137732,Yang et al,16:8 LD
+36,26,2,GSE137732,Yang et al,16:8 LD
+37,29,5,GSE137732,Yang et al,16:8 LD
+38,32,8,GSE137732,Yang et al,16:8 LD
+39,35,11,GSE137732,Yang et al,16:8 LD
+40,38,14,GSE137732,Yang et al,16:8 LD
+41,41,17,GSE137732,Yang et al,16:8 LD
+42,44,20,GSE137732,Yang et al,16:8 LD
+43,47,23,GSE137732,Yang et al,16:8 LD
+44,2,2,GSE115583,Cortijo et al,12:12 LD
+45,4,4,GSE115583,Cortijo et al,12:12 LD
+46,6,6,GSE115583,Cortijo et al,12:12 LD
+47,8,8,GSE115583,Cortijo et al,12:12 LD
+48,10,10,GSE115583,Cortijo et al,12:12 LD
+49,12,12,GSE115583,Cortijo et al,12:12 LD
+50,14,14,GSE115583,Cortijo et al,12:12 LD
+51,16,16,GSE115583,Cortijo et al,12:12 LD
+52,18,18,GSE115583,Cortijo et al,12:12 LD
+53,20,20,GSE115583,Cortijo et al,12:12 LD
+54,22,22,GSE115583,Cortijo et al,12:12 LD
+55,24,0,GSE115583,Cortijo et al,12:12 LD

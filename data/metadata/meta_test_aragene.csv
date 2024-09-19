@@ -1,0 +1,73 @@
+Column,Col_names,Sampling time (CT/ZT),Time (24hr modulus),Study Accession,Authors,Photoperiod,Platform,Tissue
+0,Short_V_4,4,4,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Vasculature
+1,Long_M_28,28,4,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Mesophyll
+2,Short_W_36,36,12,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Whole leaf
+3,Short_W_0,0,0,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Whole leaf
+4,Short_V_24,24,0,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Vasculature
+5,Short_M_28,28,4,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Mesophyll
+6,Long_V_28,28,4,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Vasculature
+7,Long_M_4,4,4,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Mesophyll
+8,Short_M_12,12,12,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Mesophyll
+9,Long_V_44,44,20,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Vasculature
+10,Long_W_36,36,12,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Whole leaf
+11,Short_W_40,40,16,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Whole leaf
+12,Short_V_40,40,16,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Vasculature
+13,Long_W_8,8,8,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Whole leaf
+14,Short_M_32,32,8,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Mesophyll
+15,Short_V_20,20,20,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Vasculature
+16,Long_M_44,44,20,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Mesophyll
+17,Short_W_20,20,20,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Whole leaf
+18,Short_W_4,4,4,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Whole leaf
+19,Short_W_32,32,8,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Whole leaf
+20,Long_M_24,24,0,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Mesophyll
+21,Short_V_0,0,0,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Vasculature
+22,Long_M_0,0,0,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Mesophyll
+23,Long_V_24,24,0,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Vasculature
+24,Short_M_24,24,0,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Mesophyll
+25,Short_V_28,28,4,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Vasculature
+26,Short_V_44,44,20,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Vasculature
+27,Short_W_44,44,20,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Whole leaf
+28,Long_W_32,32,8,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Whole leaf
+29,Long_V_40,40,16,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Vasculature
+30,Short_M_8,8,8,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Mesophyll
+31,Short_W_16,16,16,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Whole leaf
+32,Long_M_40,40,16,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Mesophyll
+33,Short_V_16,16,16,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Vasculature
+34,Short_M_36,36,12,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Mesophyll
+35,Long_W_12,12,12,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Whole leaf
+36,Long_M_12,12,12,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Mesophyll
+37,Long_W_28,28,4,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Whole leaf
+38,Long_V_20,20,20,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Vasculature
+39,Short_M_20,20,20,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Mesophyll
+40,Long_V_8,8,8,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Vasculature
+41,Long_W_0,0,0,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Whole leaf
+42,Short_W_28,28,4,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Whole leaf
+43,Long_M_36,36,12,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Mesophyll
+44,Short_M_44,44,20,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Mesophyll
+45,Short_W_12,12,12,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Whole leaf
+46,Long_V_4,4,4,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Vasculature
+47,Short_V_12,12,12,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Vasculature
+48,Long_W_16,16,16,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Whole leaf
+49,Long_M_16,16,16,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Mesophyll
+50,Short_V_32,32,8,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Vasculature
+51,Long_W_44,44,20,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Whole leaf
+52,Long_V_36,36,12,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Vasculature
+53,Short_M_4,4,4,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Mesophyll
+54,Long_V_12,12,12,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Vasculature
+55,Short_M_16,16,16,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Mesophyll
+56,Long_V_16,16,16,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Vasculature
+57,Long_M_8,8,8,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Mesophyll
+58,Long_W_24,24,0,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Whole leaf
+59,Short_M_40,40,16,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Mesophyll
+60,Long_M_32,32,8,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Mesophyll
+61,Short_W_24,24,0,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Whole leaf
+62,Long_W_4,4,4,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Whole leaf
+63,Long_W_20,20,20,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Whole leaf
+64,Long_M_20,20,20,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Mesophyll
+65,Short_V_8,8,8,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Vasculature
+66,Long_V_0,0,0,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Vasculature
+67,Short_W_8,8,8,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Whole leaf
+68,Short_M_0,0,0,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Mesophyll
+69,Long_V_32,32,8,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Vasculature
+70,Long_W_40,40,16,GSE50438,Endo et al,16:8 LD,AraGene 1.0 ST,Whole leaf
+71,Short_V_36,36,12,GSE50438,Endo et al,8:16 LD,AraGene 1.0 ST,Vasculature

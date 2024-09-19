@@ -1,0 +1,59 @@
+Column,Col_name,Sampling time (CT/ZT),Time (24hr modulus),Study Accession,Authors,Photoperiod,Platform
+0,mas_48,48,0,SRP064782,Takahashi et al,LL,Illumina HiSeq 1500 PE 100bp
+1,mas_52,52,4,SRP064782,Takahashi et al,LL,Illumina HiSeq 1500 PE 100bp
+2,mas_56,56,8,SRP064782,Takahashi et al,LL,Illumina HiSeq 1500 PE 100bp
+3,mas_60,60,12,SRP064782,Takahashi et al,LL,Illumina HiSeq 1500 PE 100bp
+4,mas_64,64,16,SRP064782,Takahashi et al,LL,Illumina HiSeq 1500 PE 100bp
+5,mas_68,68,20,SRP064782,Takahashi et al,LL,Illumina HiSeq 1500 PE 100bp
+6,mas_72,72,0,SRP064782,Takahashi et al,LL,Illumina HiSeq 1500 PE 100bp
+7,mas_76,76,4,SRP064782,Takahashi et al,LL,Illumina HiSeq 1500 PE 100bp
+8,mas_80,80,8,SRP064782,Takahashi et al,LL,Illumina HiSeq 1500 PE 100bp
+9,mas_84,84,12,SRP064782,Takahashi et al,LL,Illumina HiSeq 1500 PE 100bp
+10,mas_88,88,16,SRP064782,Takahashi et al,LL,Illumina HiSeq 1500 PE 100bp
+11,mas_92,92,20,SRP064782,Takahashi et al,LL,Illumina HiSeq 1500 PE 100bp
+12,yav_10_1,10,10,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+13,yav_10_2,10,10,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+14,yav_10_3,10,10,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+15,yav_14_1,14,14,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+16,yav_14_2,14,14,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+17,yav_14_3,14,14,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+18,yav_18_1,18,18,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+19,yav_18_2,18,18,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+20,yav_18_3,18,18,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+21,yav_22_1,22,22,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+22,yav_22_2,22,22,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+23,yav_22_3,22,22,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+24,yav_2_1,2,2,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+25,yav_2_2,2,2,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+26,yav_2_3,2,2,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+27,yav_6_1,6,6,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+28,yav_6_2,6,6,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+29,yav_6_3,6,6,GSE43865,Rugnone et al,16:8 LD,Illumina Genome Analyzer Iix SE 100bp
+30,wigge_0,0,0,PRJNA384110,Ezer et al,8:16 LD,Illumina HiSeq 2000 PE 100bp
+31,wigge_1,1,1,PRJNA384110,Ezer et al,8:16 LD,Illumina HiSeq 2000 PE 100bp
+32,wigge_4,4,4,PRJNA384110,Ezer et al,8:16 LD,Illumina HiSeq 2000 PE 100bp
+33,wigge_8,8,8,PRJNA384110,Ezer et al,8:16 LD,Illumina HiSeq 2000 PE 100bp
+34,wigge_12,12,12,PRJNA384110,Ezer et al,8:16 LD,Illumina HiSeq 2000 PE 100bp
+35,wigge_16,16,16,PRJNA384110,Ezer et al,8:16 LD,Illumina HiSeq 2000 PE 100bp
+36,wigge_20,20,20,PRJNA384110,Ezer et al,8:16 LD,Illumina HiSeq 2000 PE 100bp
+37,wigge_22,22,22,PRJNA384110,Ezer et al,8:16 LD,Illumina HiSeq 2000 PE 100bp
+38,izne_22_1,22,22,PRJEB10930,Dubois et al,16:8 LD,Illumina HiSeq 2000 SE 50bp
+39,izne_22_3,22,22,PRJEB10930,Dubois et al,16:8 LD,Illumina HiSeq 2000 SE 50bp
+40,izne_30_1,30,6,PRJEB10930,Dubois et al,16:8 LD,Illumina HiSeq 2000 SE 50bp
+41,izne_30_2,30,6,PRJEB10930,Dubois et al,16:8 LD,Illumina HiSeq 2000 SE 50bp
+42,izne_30_3,30,6,PRJEB10930,Dubois et al,16:8 LD,Illumina HiSeq 2000 SE 50bp
+43,izne_38_1,38,14,PRJEB10930,Dubois et al,16:8 LD,Illumina HiSeq 2000 SE 50bp
+44,izne_38_2,38,14,PRJEB10930,Dubois et al,16:8 LD,Illumina HiSeq 2000 SE 50bp
+45,izne_38_3,38,14,PRJEB10930,Dubois et al,16:8 LD,Illumina HiSeq 2000 SE 50bp
+46,izne_46_1,46,22,PRJEB10930,Dubois et al,16:8 LD,Illumina HiSeq 2000 SE 50bp
+47,izne_46_2,46,22,PRJEB10930,Dubois et al,16:8 LD,Illumina HiSeq 2000 SE 50bp
+48,izne_46_3,46,22,PRJEB10930,Dubois et al,16:8 LD,Illumina HiSeq 2000 SE 50bp
+49,chen_0,0,0,GSE51578,Miller et al,16:8 LD,Illumina Genome Analyzer GII SE 85bp
+50,chen_6,6,6,GSE51578,Miller et al,16:8 LD,Illumina Genome Analyzer GII SE 85bp
+51,chen_15,15,15,GSE51578,Miller et al,16:8 LD,Illumina Genome Analyzer GII SE 85bp
+52,graf_0_1,0,0,SRP082192,Graf et al,12:12 LD,Illumina HiSeq 2500 SE 100bp
+53,graf_0_2,0,0,SRP082192,Graf et al,12:12 LD,Illumina HiSeq 2500 SE 100bp
+54,graf_12_2,12,12,SRP082192,Graf et al,12:12 LD,Illumina HiSeq 2500 SE 100bp
+55,graf_0_3,0,0,SRP082192,Graf et al,12:12 LD,Illumina HiSeq 2500 SE 100bp
+56,graf_12_3,12,12,SRP082192,Graf et al,12:12 LD,Illumina HiSeq 2500 SE 100bp
+57,graf_12_1,12,12,SRP082192,Graf et al,12:12 LD,Illumina HiSeq 2500 SE 100bp
