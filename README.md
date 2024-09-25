@@ -34,9 +34,9 @@ To train a model with a specified feature set and list of hyperparameters, we pr
 
 ## Saved models
 The ensemble of sub-models that were fit to the `data/expression_matrices/x_training.csv` RNA-seq expression matrix can be found within the following Hugging Face repositories:
-* [ChronoGauge ensemble for _Arabidopsis_ RNA-seq data] (https://huggingface.co/conjr94/ChronoGauge_RNAseq)
-* [ChronoGauge ensemble for _Arabidopsis_ ATH1 microarray data] (https://huggingface.co/conjr94/ChronoGauge_ATH1_microarray)
-* [ChronoGauge ensemble for _Arabidopsis_ AraGene microarray data] (https://huggingface.co/conjr94/ChronoGauge_AraGene_microarray)
+* [ChronoGauge ensemble for _Arabidopsis_ RNA-seq data](https://huggingface.co/conjr94/ChronoGauge_RNAseq)
+* [ChronoGauge ensemble for _Arabidopsis_ ATH1 microarray data](https://huggingface.co/conjr94/ChronoGauge_ATH1_microarray)
+* [ChronoGauge ensemble for _Arabidopsis_ AraGene microarray data](https://huggingface.co/conjr94/ChronoGauge_AraGene_microarray)
 
 
 While all models were trained using only RNA-seq data, ensembles generated for microarray experiments included only gene features that are present within each platforms gene set. Each ensemble includes 100 models using feature sets geenrated by SFS. 
