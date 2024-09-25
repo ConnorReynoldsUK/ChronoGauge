@@ -16,7 +16,7 @@ To build a set of predictive gene features, we provide the script `sfs_main_git.
 The custom SFS wrapper takes:
 1. A training expression matrix (e.g. `data/expression_matrices/x_training.csv`)
 2. Time-point labels for each sample (e.g. `data/targets/target_training.csv`)
-3. Prior circadian information regarding each gene feture's phase (in 4-hour bins ranging 0-24) & Q-value determined using MetaCycle (meta2d method) (e.g. `data/sfs_gene_info.csv` 
+3. Prior circadian information regarding each gene feture's phase (in 4-hour bins ranging 0-24) & Q-value determined using MetaCycle (meta2d method) (e.g. `data/sfs_input/sfs_gene_info.csv` 
 
 Pre-processing follows these steps:
 1. Only gene features with a circadian rhyhtmicity meta2d Q < 0.05 are selected
@@ -32,7 +32,14 @@ We note that the SFS is intended to generate multiple feature sets for building 
 To train a model with a specified feature set and list of hyperparameters, we provide the script `train_model.py`. By default, the script will train a model using 17 cannonical circadain clock genes as features.
 
 
+## Saved models
+The ensemble of sub-models that were fit to the `data/expression_matrices/x_training.csv` RNA-seq expression matrix can be found within the following Hugging Face repositories:
+* [ChronoGauge ensemble for _Arabidopsis_ RNA-seq data] (https://huggingface.co/conjr94/ChronoGauge_RNAseq)
+* [ChronoGauge ensemble for _Arabidopsis_ ATH1 microarray data] (https://huggingface.co/conjr94/ChronoGauge_ATH1_microarray)
+* [ChronoGauge ensemble for _Arabidopsis_ AraGene microarray data] (https://huggingface.co/conjr94/ChronoGauge_AraGene_microarray)
 
+
+While all models were trained using only RNA-seq data, ensembles generated for microarray experiments included only gene features that are present within each platforms gene set. Each ensemble includes 100 models using feature sets geenrated by SFS. 
 
 
 ## Dependencies
