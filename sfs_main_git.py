@@ -45,17 +45,23 @@ os.environ['PYTHONHASHSEED'] = str(SEED)
 tf.random.set_seed(0)
 
 if not os.path.exists(args.out_results):
-    os.mkdir()
-# where all possible gene features are output
-if not os.path.exists(args.out_results + '/feature_space'):
-    os.mkdir(args.out_results + '/feature_space')
-# where each iteration is output
-if not os.path.exists(args.out_results + '/show_seq'):
-    os.mkdir(args.out_results + '/show_seq')
-# get date & time as a directory label
-exp_name = args.out_results + 'seed_{}_{}'.format(args.seed, datetime.now().strftime('%H%M%S_%d%m%y'))
-if not os.path.exists(exp_name):
-    os.mkdir(exp_name)
+    os.mkdir(args.out_results)
+
+
+exp_name = 'seed_{}_{}'.format(args.seed, datetime.now().strftime('%H%M%S_%d%m%y'))
+out_name = args.out_results +'/'+ exp_name
+if not os.path.exists(out_name):
+    os.mkdir(out_name)
+
+
+out_features = out_name + '/feature_sets'
+if not os.path.exists(out_features):
+    os.mkdir(out_features)
+
+out_iterations = out_name + '/show_iterations'
+if not os.path.exists(out_iterations):
+    os.mkdir(out_iterations)
+
 
 def initial_check():
     """
@@ -159,6 +165,88 @@ def define_feature_space(prior_info, x_train, bootstrap_fracion, n_genes_bin):
 
     return balanced_features, first_gene
 
+
+def run_sfs(sfs_wrapper, n_iterations, n_genes_max, min_length, n_features_reverse=8, min_error=60):
+    """
+        Iterates over each phase bin and tests adding a gene within the respective bin to the feature set.
+        Gene features whose addition gives the minimum MAE are kept within the ongoing feature set.
+
+
+        Parameters
+        ----------
+        sfs_wrapper : object
+            The object of the SFS algorithm. Must be initialized to an expression matrix, time-point targets and feature information.
+        n_iterations : int
+            The algorithm will cease after iteratively searching this number of phase bins.
+        n_genes_max : int
+            The algorithm will cease after the gene feature set reaches this length.
+        min_length : int
+            Errors will not be recorded unless the gene feature set reaches this length.
+        n_features_reverse : int or None
+            A reverse selection will be applied when the gene feature set reaches this length. If None, will not take this step. Deafault: 8.
+        min_error : int
+            Results for an iteration will only be reported and saved if the mean-absolute-error is below this value. Deafault: 60.
+
+        Actions
+        ----------
+        - Prints the current iteration number
+        - Prints the current length of the feature set / number of genes selected
+        - Prints the mean-asbolute-error of the current model across 5-fold cross-validation
+        - Saves current gene feature set with a file name correspoinding to gene number and mean-absolute-error as a pickle file
+        - Saves current gene legnth and mean-absolute-error as a pickle file
+
+        Returns
+        ----------
+        None
+            The algorithm is unlikely to reach n_iterations or n_genes_max in a scalable timeframe therefore returns None.
+            We recommend killing the script after a certain number of computation hours (e.g. 6 hours) or by reducing the number of iterations.
+
+                """
+
+
+
+    gene_length = 0
+
+    array_length = []
+    array_error = []
+    for n in range(0, n_iterations):
+        if gene_length < n_genes_max:
+            gene_iteration, error_iteration = sfs_wrapper.manual_run()
+            gene_length = len(gene_iteration)
+
+
+            if n_features_reverse is not None:
+
+                if gene_length > n_features_reverse:
+                    gene_iteration, error_iteration = sfs_wrapper.manual_reverse()
+
+            array_error.append(error_iteration)
+            array_length.append(len(gene_iteration))
+
+            if gene_length > min_length:
+                # make sure error iteration isn't a list
+                if isinstance(error_iteration, list):
+                    error_iteration = error_iteration[0]
+
+                if error_iteration < min_error:
+                    print('Iteration number: {}'.format(n))
+                    print('Gene length: {}'.format(gene_length))
+                    print('Error: {}\n'.format(error_iteration))
+
+                    #saves the current feature set
+                    with open(out_features+'/{}_results.p'.format(n), 'wb') as handle:
+                        out_dic = {'iteration':n, 'n_genes':gene_length, 'gene_set':gene_iteration, 'error':error_iteration}
+                        pickle.dump(out_dic, handle)
+
+            # saves the lists of gene lengths and list of errors
+            with open(out_iterations + '/iterations.p', 'wb') as handle:
+                pickle.dump([n, array_error], handle)
+
+        else:
+            print('MAX GENE FEATURES REACHED')
+            break
+
+
 def main():
     #list inputs to the script
     initial_check()
@@ -174,79 +262,10 @@ def main():
     # initialize the wrapper. NOTE if model returns NaN, reduce learning_rate
     sfs_wrapper = SFS_hub(first_gene, x_train, y_train, balanced_features, learning_rate=0.003)
     sfs_wrapper.manual_control()
-    gene_length = 0
 
-    array_length = []
-    array_error = []
-    for n in range(0, 7):
-        if gene_length < args.max_genes:
-            gene_iteration, error_iteration = sfs_wrapper.manual_run()
-            gene_length = len(gene_iteration)
-
-            array_error.append(error_iteration)
-            array_length.append(len(gene_iteration))
-
-    if gene_length > 7:
-        gene_iteration, error_iteration = sfs_wrapper.manual_reverse()
-
-    if gene_length > 4:
-        if isinstance(error_iteration, list):
-            error_iteration = error_iteration[0]
-
-            print('Iteration number: {}'.format(n))
-            print('Gene length: {}'.format(gene_length))
-            print('Error: {}\n'.format(error_iteration))
-
+    run_sfs(sfs_wrapper=sfs_wrapper, n_iterations=args.n_iterations, n_genes_max=args.max_genes,
+            min_length=4, n_features_reverse=8, min_error=60)
 
 if __name__ == "__main__":
     main()
 
-sys.exit()
-sfs_i = SFS_hub(main_gene, X_train, Y_train_data, X_train, Y_train_data, ranked)
-sfs_i.manual_control()
-
-gene_length = 0
-
-array_length = []
-array_error = []
-if not os.path.exists('results'):
-    os.mkdir('results')
-if not os.path.exists('results/show_seq'):
-    os.mkdir('results/show_seq')
-exp_name = time.time()
-os.mkdir('results/{}'.format(exp_name))
-
-
-for n in range(0, 100000000):
-    if gene_length < N_GENES:
-        gene_iteration, error_iteration = sfs_i.manual_run()
-        gene_length = len(gene_iteration)
-
-
-
-        array_error.append(error_iteration)
-        array_length.append(len(gene_iteration))
-
-
-        if gene_length > 7:
-            gene_iteration, error_iteration = sfs_i.manual_reverse()
-
-        if gene_length > 4:
-            if isinstance(error_iteration, list):
-                error_iteration = error_iteration[0]
-
-            if error_iteration < 60:
-                print('Iteration number: {}'.format(n))
-                print('Gene length: {}'.format(gene_length))
-                print('Error: {}'.format(error_iteration))
-
-                with open('results/{}/{}_{}_results.p'.format(exp_name, gene_length, error_iteration),
-                          'wb') as handle:
-                    pickle.dump(gene_iteration, handle)
-                with open('results/show_seq/{}.p'.format(exp_name),
-                          'wb') as handle:
-                    pickle.dump([array_length, array_error], handle)
-    else:
-        break
-
-# SequentialFeatureSelectionCoreGene(X_train, Y_train_data, ranked, N_GENES, 120, X_yav, Y_yav_data, main_gene, main_gene_idx)

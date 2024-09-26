@@ -30,13 +30,6 @@ def reset_seeds(reset_graph_with_backend=None):
     tf.compat.v1.set_random_seed(3)
 
 
-def cyclical_loss(y_true, y_pred):
-    error = 0
-    for i in range(y_pred.shape[0]):
-        error += np.arccos((y_true[i, :] @ y_pred[i, :]) / (norm(y_true[i, :]) * norm(y_pred[i, :]) + 1e-8))
-    return error
-
-
 
 
 class SFS_hub(object):
@@ -67,6 +60,8 @@ class SFS_hub(object):
         for p in range(self.phase_bins.shape[0]):
             self.counts[self.phase_bins[p]] = 0
 
+        if not os.path.exists('Results'):
+            os.mkdir('Results')
         self.exp_name = time.time()
         self.folds = KFold(n_splits=5, shuffle=True, random_state=0)
 
@@ -78,7 +73,7 @@ class SFS_hub(object):
         self.base_score = 9999.99
 
 
-        self.early_stop = EarlyStopping(patience=20, restore_best_weights=True, monitor='val_loss', mode='min')
+        self.early_stop = EarlyStopping(patience=50, restore_best_weights=True, monitor='val_loss', mode='min')
 
 
     def custom_loss(self, y_true, y_pred):
@@ -185,17 +180,15 @@ class SFS_hub(object):
             X_train, Y_train = X_d[train_idx], Y_data[train_idx]  # Define training data for this iteration
             X_valid, Y_valid = X_d[valid_idx], Y_data[valid_idx]
             reset_seeds()
-            tf.keras.backend.clear_session()
-            tf.compat.v1.reset_default_graph()
             model = self.larger_model()
             # batch size = 2
 
             model.fit(X_train.astype('float32'), Y_train.astype('float32'),
                       validation_data=(X_valid.astype('float32'), Y_valid.astype('float32')),
-                      batch_size=2, epochs=250, callbacks=[self.early_stop],
-                      verbose=0)  # Fit the model on the training data
-            preds = normalize(model.predict(X_valid))  # Predict on the validation data
-            all_preds[valid_idx] = normalize(model.predict(X_valid))
+                      batch_size=4, epochs=250, callbacks=[self.early_stop],
+                      verbose=None)  # Fit the model on the training data
+
+            all_preds[valid_idx] = model.predict(X_valid.astype('float32'))
             tf.keras.backend.clear_session()
             tf.compat.v1.reset_default_graph()
             model = None
@@ -204,6 +197,7 @@ class SFS_hub(object):
             # error += self.cyclical_loss(Y_valid.astype('float32'), preds.astype('float32'))  # Evaluate the predictions
         # forward stage
         if type == 'foward':
+            print('+ ',i_gene[-1], self.cyclical_loss(Y_data.astype('float64'), all_preds.astype('float64')), '\n')
             self.results_iteration['train_error'].append(
                     self.cyclical_loss(Y_data.astype('float64'), all_preds.astype('float64')))
         # reverse stage
