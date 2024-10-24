@@ -133,14 +133,14 @@ def model_parameters(model_id=None):
     else:
         with open('data/model_parameters/model_parameters.p', 'rb') as fin:
             params = pickle.load(fin)
-        params = params[model_number]
-        l2 = params['lr']
+        params = params[model_id]
+        lr = params['lr']
         batches = params['batches']
         l2 = params['lr']
     
         # select specific feature set for this model
         all_gene_features = pd.read_csv('data/model_parameters/gene_features_unadjusted.csv', index_col=0)
-        feature_set = all_gene_features.iloc[model_number].dropna().to_numpy()
+        feature_set = all_gene_features.iloc[model_id].dropna().to_numpy()
     
     return feature_set, lr, l2, batches
 

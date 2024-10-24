@@ -1,0 +1,13 @@
+channels:
+  - defaults
+  - anaconda
+  - conda-forge
+dependencies:
+  - python=3.9.5
+  - tensorflow=2.10.0
+  - scikit-learn=1.5.1
+  - numpy=1.26.4
+  - pandas=2.2.2
+  - tqdm=4.66.5
+  - jupyter
+  - notebook
