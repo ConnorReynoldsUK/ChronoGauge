@@ -39,15 +39,6 @@ cd ChronoGauge
 source install_current.sh
 ```
 
-## For Windows users
-1. Download & unzip the https://github.com/ConnorReynoldsUK/ChronoGauge repository
-2. In the Anaconda prompt:
-
-```
-conda env create PATH_TO_REPO/ChronoGauge/env/chronogauge_current.yml -n chronogauge_current
-conda activate chronogauge_current
-```
-
 The environment installation should take ~2 minutes.
 
 **Note:** The original script in our paper uses a conda environment installed specifically in AlmaLinux 5.14.0 OS on the HPC, which is not reproducible across other OS. We provide 'env/chronogauge_original.yml' which can be used to install the environment in the respective OS using:
