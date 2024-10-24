@@ -49,10 +49,12 @@ conda activate chronogauge_alma
 ```
 
 ## Sequential feature selection (SFS)
-To build a set of predictive gene features, we provide the script `sfs_main_git.py` to execute a single SFS run. This script can be run using the following command:
-`python sfs_main_git.py `
+To build a set of predictive gene features, we provide the script `sfs_main_git.py` to execute a single SFS run. This script can be run using the following command, using a seed value of 0 as an example:
+'python3 sfs_main_git.py --seed 0 --max_genes 40 --n_gene_balance 25 --n_iterations 10000 & PID=$!; sleep 21600 && kill $PID'
+We add a kill command to terminate the script after 21600 seconds (6 hours), as the algorithm will not finish in a scalable time-frame.
 
-A detailed example is shown in the notebook `example_sfs_wrapper.ipynb`.
+
+A detailed and more simple example is shown in the notebook `example_sfs_wrapper.ipynb`.
 
 
 The custom SFS wrapper takes:
@@ -75,6 +77,12 @@ We note that the SFS is intended to generate multiple feature sets for building 
 
 ## Model training
 To train a model with a specified feature set and list of hyperparameters, we provide the script `train_model.py`. By default, the script will train a model using 17 cannonical circadain clock genes as features.
+
+Multiple models each with a unique ID value can be trained using the following command:
+
+'for i in {0..10}; do python3 train_model.py --x_test data/expression_matrices/x_test_rna.csv --target_test data/targets/target_test_rna.csv --out_model results/saved_model --model_id $i; done'
+
+Each script should take < 1 minute to complete.
 
 Additionally, we provide the notebook `example_model_training.ipynb` as a more detailed walkthrough.
 
@@ -103,16 +111,6 @@ While there is no theoretical reason ChronoGauge should not be applicable to mam
 * Taufisher [6]
 
 We would therefore recommend researchers to evaluate multiple different approaches and to carefully consider the suitability and reliability of each method before deciding which one to use within their context.
-
-## Dependencies
-Scripts use the following:
-* Python v3.9.5
-* tensorflow==2.6
-* scikit-learn==0.24.2
-* numpy==1.19.5
-* pandas==1.3.3
-* tqdm
-* matplotlib
 
 ## Datasets
 The following datasets are included in this repository:
