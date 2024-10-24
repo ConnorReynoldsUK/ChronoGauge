@@ -50,7 +50,10 @@ conda activate chronogauge_alma
 
 ## Sequential feature selection (SFS)
 To build a set of predictive gene features, we provide the script `sfs_main_git.py` to execute a single SFS run. This script can be run using the following command, using a seed value of 0 as an example:
-'python3 sfs_main_git.py --seed 0 --max_genes 40 --n_gene_balance 25 --n_iterations 10000 & PID=$!; sleep 21600 && kill $PID'
+
+```
+python3 sfs_main_git.py --seed 0 --max_genes 40 --n_gene_balance 25 --n_iterations 10000 & PID=$!; sleep 21600 && kill $PID
+```
 We add a kill command to terminate the script after 21600 seconds (6 hours), as the algorithm will not finish in a scalable time-frame.
 
 
@@ -80,8 +83,11 @@ To train a model with a specified feature set and list of hyperparameters, we pr
 
 Multiple models each with a unique ID value can be trained using the following command:
 
-'for i in {0..10}; do python3 train_model.py --x_test data/expression_matrices/x_test_rna.csv --target_test data/targets/target_test_rna.csv --out_model results/saved_model --model_id $i; done'
-
+```
+for i in {0..10}; 
+do python3 train_model.py --x_test data/expression_matrices/x_test_rna.csv --target_test data/targets/target_test_rna.csv --out_model results/saved_model --model_id $i; 
+done
+```
 Each script should take < 1 minute to complete.
 
 Additionally, we provide the notebook `example_model_training.ipynb` as a more detailed walkthrough.
