@@ -1,4 +1,6 @@
 # ChronoGauge ensemble
+### Work assocaciated with:
+## Machine learning models reveal environmental and genetic factors associated with the plant circadian clock
 Connor Reynolds<sub>1</sub>, Joshua Colmer<sub>1</sub>, Hannah Rees<sub>2</sub>, Ehsan Khajouei<sub>1</sub>, Rachel Rusholme-Pilcher<sub>1</sub>, Hiroshi Kudoh<sub>3</sub>, Antony Dodd<sub>4</sub>, Anthony Hall<sub>1,5</sub>
 
 <sub>1</sub>Earlham Institute, Norwich Research Park  
@@ -6,6 +8,8 @@ Connor Reynolds<sub>1</sub>, Joshua Colmer<sub>1</sub>, Hannah Rees<sub>2</sub>,
 <sub>3</sub>Centre for Ecological Research, Kyoto University  
 <sub>4</sub>John Innes Centre, Norwich Research Park  
 <sub>5</sub>School of Biological Sciences, University of East Anglia  
+
+DOI: [10.1101/2024.10.28.620591](https://www.biorxiv.org/content/10.1101/2024.10.28.620591v1)
 
 ## Overview
 ChronoGauge is a bagging-like ensemble model for circadian time (CT) estimation from transcriptome samples (e.g. RNA-seq, microarray). The model was developed specifically for use in the context of plant transcriptome data.
